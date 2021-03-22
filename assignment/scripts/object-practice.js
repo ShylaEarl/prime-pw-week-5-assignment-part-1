@@ -46,11 +46,11 @@ console.log('My last fav food is:', me.favThreeFoods[2]);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count.
 */
-console.log('My original shoe count was:', me.shoePairCount);
 console.log(`My original shoe count was: ${me.shoePairCount}`);
+console.log('My original shoe count was:', me.shoePairCount);
 console.log('I got a new pair of shoes! My shoe count is now:', me.shoePairCount+1); //should be 13
-console.log('I got a new pair of shoes! My shoe count is now:', me.shoePairCount-5); //should be 8
-console.log('I got a new pair of shoes! My shoe count is now:', me.shoePairCount+3); //should be 11
+console.log('I donated 5 pairs of shoes. My shoe count is now:', me.shoePairCount-5); //should be 8
+console.log('I received 3 new pair of shoes! My shoe count is now:', me.shoePairCount+3); //should be 11
 
 //ask question about math and variable values here!
 
@@ -62,12 +62,13 @@ console.log('I got a new pair of shoes! My shoe count is now:', me.shoePairCount
 */
 
 me.favoriteColor = 'red';
+//why don't we need to use let here to declare a new property?
 console.log('updated fav color', me);
 console.log(`updated fav color ${me}`); //why does this return 'object Object'?
 console.log(`updated fav color ${me.favoriteColor}`);
 
-//why don't we need to use let here to declare a new property?
 
+//***EXTRA WORK***
 //function from Dev's video
 let card0 = {
   suit: 'Hearts',
