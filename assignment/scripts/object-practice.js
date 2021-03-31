@@ -39,6 +39,7 @@ console.log('What is my full name?', fullName);
 */
 console.log('My first fav food is:', me.favThreeFoods[0]);
 console.log('My last fav food is:', me.favThreeFoods[2]);
+console.log('My last fav food is:', me.favThreeFoods[me.favThreeFoods.length-1]);
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -48,9 +49,9 @@ console.log('My last fav food is:', me.favThreeFoods[2]);
 */
 console.log(`My original shoe count was: ${me.shoePairCount}`);
 console.log('My original shoe count was:', me.shoePairCount);
-console.log('I got a new pair of shoes! My shoe count is now:', me.shoePairCount+1); //should be 13
-console.log('I donated 5 pairs of shoes. My shoe count is now:', me.shoePairCount-5); //should be 8
-console.log('I received 3 new pair of shoes! My shoe count is now:', me.shoePairCount+3); //should be 11
+console.log('I got a new pair of shoes! My shoe count is now:', me.shoePairCount += 1); //should be 13
+console.log('I donated 5 pairs of shoes. My shoe count is now:', me.shoePairCount -= 5); //should be 8
+console.log('I received 3 new pair of shoes! My shoe count is now:', me.shoePairCount += 3); //should be 11
 
 //ask question about math and variable values here!
 
